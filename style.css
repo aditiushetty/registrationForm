@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 15px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e8f0ff, #f7f9fc);
+    color: #263238;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.form-card, .result-card {
+    background: #ffffff;
+    padding: 32px;
+    border-radius: 14px;
+    box-shadow: 0 8px 28px rgba(30, 60, 90, 0.12);
+}
+
+h1 {
+    margin: 0 0 8px;
+    text-align: center;
+    color: #174ea6;
+}
+
+.subtitle {
+    text-align: center;
+    color: #667085;
+    margin: 0 0 25px;
+}
+
+.form-group {
+    margin-bottom: 17px;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: 600;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+textarea {
+    resize: vertical;
+}
+
+button, .button {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    border: 0;
+    border-radius: 7px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover, .button:hover {
+    background: #174ea6;
+}
+
+.success-icon {
+    width: 58px;
+    height: 58px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    background: #dcfce7;
+    color: #15803d;
+    display: grid;
+    place-items: center;
+    font-size: 32px;
+}
+
+.result-card h2 {
+    margin-top: 28px;
+    color: #174ea6;
+    font-size: 20px;
+}
+
+.details {
+    margin-bottom: 25px;
+}
+
+.detail-row {
+    display: grid;
+    grid-template-columns:  minmax(130px, 1fr) 2fr;
+    gap: 12px;
+    padding: 13px 10px;
+    border-bottom: 1px solid #e5e7eb;
+    overflow-wrap: anywhere;
+}
+
+.detail-row strong {
+    color: #475569;
+}
+
+.error-box {
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background: #fee2e2;
+    color: #991b1b;
+    border-radius: 7px;
+}
+
+.error-box p {
+    margin: 5px 0;
+}
+
+@media (max-width: 480px) {
+    .form-card, .result-card {
+        padding: 22px 17px;
+    }
+
+    .detail-row {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+}
